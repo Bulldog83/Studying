@@ -1,2 +1,0 @@
-ru/bulldog/Main.java
- ru.bulldog.Main
