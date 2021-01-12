@@ -20,6 +20,7 @@ public class Main {
 
 		int year = 2020;
 
+		System.out.println("f: " + f);
 		System.out.println("clamp: " + clamp);
 		System.out.println("sign: " + sign);
 		System.out.printf("Is %d leap: %s%n", year, isYearLeap(year));
