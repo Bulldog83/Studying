@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aea2404-9ea7-48dd-ae90-49687ba33f87" name="Default Changelist" comment="" />
+    <list default="true" id="2aea2404-9ea7-48dd-ae90-49687ba33f87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/modules/JavaLevel1Lesson1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson1/src/main/java/ru/bulldog/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/JavaLevel1Lesson2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/modules/JavaLevel1Lesson1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaLevel1Lesson2/src/main/java/ru/bulldog/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +50,47 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JavaLevel1Lesson2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="Studying" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Test" type="JarApplication" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
