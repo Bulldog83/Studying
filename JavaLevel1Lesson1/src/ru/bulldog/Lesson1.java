@@ -1,6 +1,6 @@
 package ru.bulldog;
 
-public class Main {
+public class Lesson1 {
 
 	public static void main(String[] args) {
 		byte b = 0;
@@ -11,7 +11,7 @@ public class Main {
 		float f = calculate(1.0f, 2.0f, 3.0f, 4.0f);
 		double d = 0.0;
 
-		boolean clamp = clampSumm(-5, 16);
+		boolean clamp = clampSum(-5, 16);
 		boolean sign = checkSignNegate(i);
 		char c = 'c';
 
@@ -30,9 +30,9 @@ public class Main {
 		return a * (b + (c / d));
 	}
 
-	private static boolean clampSumm(int i, int j) {
-		int summ = i + j;
-		return summ >= 10 && summ <= 20;
+	private static boolean clampSum(int i, int j) {
+		int sum = i + j;
+		return sum >= 10 && sum <= 20;
 	}
 
 	private static void printSign(int i) {

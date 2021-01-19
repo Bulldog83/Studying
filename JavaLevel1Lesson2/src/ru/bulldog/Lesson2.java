@@ -3,7 +3,7 @@ package ru.bulldog;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Main {
+public class Lesson2 {
 
 	public static void main(String[] args) {
 		//1
