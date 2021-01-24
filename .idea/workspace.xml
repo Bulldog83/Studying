@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea2404-9ea7-48dd-ae90-49687ba33f87" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/JavaLevel1Lesson4/src/ru/bulldog/Lesson4.java" afterDir="false" />
+=======
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/Studying.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Studying.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -42,6 +45,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Lesson4">
+<<<<<<< Updated upstream
     <configuration name="Lesson1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -72,6 +76,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+>>>>>>> Stashed changes
     <configuration name="Lesson3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -139,16 +145,22 @@
       <method v="2" />
     </configuration>
     <list>
+<<<<<<< Updated upstream
       <item itemvalue="Application.Lesson1" />
       <item itemvalue="Application.Lesson2" />
+=======
+>>>>>>> Stashed changes
       <item itemvalue="Application.Lesson3" />
       <item itemvalue="Application.Lesson4" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Lesson4" />
+<<<<<<< Updated upstream
         <item itemvalue="Application.Lesson2" />
         <item itemvalue="Application.Lesson1" />
+=======
+>>>>>>> Stashed changes
         <item itemvalue="Application.Lesson3" />
       </list>
     </recent_temporary>
