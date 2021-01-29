@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aea2404-9ea7-48dd-ae90-49687ba33f87" name="Default Changelist" comment="" />
+    <list default="true" id="2aea2404-9ea7-48dd-ae90-49687ba33f87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JavaLevel1/Lesson6/src/ru/bulldog/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaLevel1/Lesson6/src/ru/bulldog/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaLevel1/Lesson6/src/ru/bulldog/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaLevel1/Lesson6/src/ru/bulldog/Lesson6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +43,7 @@
       <recent name="F:\Eclipse\projects\Studying\JavaLevel1Lesson2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lesson5">
+  <component name="RunManager" selected="Application.Lesson6">
     <configuration name="Lesson1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -68,22 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ru.bulldog.Lesson3" />
-      <module name="Studying" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.bulldog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Lesson4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -103,6 +93,21 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ru.bulldog.Lesson5" />
+      <module name="Studying" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.bulldog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ru.bulldog.Lesson6" />
       <module name="Studying" />
       <extension name="coverage">
         <pattern>
@@ -152,17 +157,17 @@
     <list>
       <item itemvalue="Application.Lesson1" />
       <item itemvalue="Application.Lesson2" />
-      <item itemvalue="Application.Lesson3" />
       <item itemvalue="Application.Lesson4" />
       <item itemvalue="Application.Lesson5" />
+      <item itemvalue="Application.Lesson6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lesson6" />
         <item itemvalue="Application.Lesson5" />
         <item itemvalue="Application.Lesson4" />
         <item itemvalue="Application.Lesson2" />
         <item itemvalue="Application.Lesson1" />
-        <item itemvalue="Application.Lesson3" />
       </list>
     </recent_temporary>
   </component>
@@ -175,6 +180,14 @@
       <option name="presentableId" value="Default" />
       <updated>1610797076502</updated>
     </task>
+    <task id="LOCAL-00001" summary="New lesson">
+      <created>1611922299115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611922299115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +201,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="New lesson" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Studying$Lesson3.ic" NAME="Lesson3 Coverage Results" MODIFIED="1611083225936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
