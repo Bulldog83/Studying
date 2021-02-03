@@ -1,4 +1,4 @@
-package ru.bulldog;
+package ru.bulldog.lesson4;
 
 import java.util.Arrays;
 import java.util.Random;

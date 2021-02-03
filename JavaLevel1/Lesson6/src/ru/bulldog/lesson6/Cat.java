@@ -1,4 +1,4 @@
-package ru.bulldog;
+package ru.bulldog.lesson6;
 
 public class Cat extends Animal {
 

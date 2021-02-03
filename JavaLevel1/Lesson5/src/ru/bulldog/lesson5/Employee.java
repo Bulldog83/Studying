@@ -1,4 +1,4 @@
-package ru.bulldog;
+package ru.bulldog.lesson5;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

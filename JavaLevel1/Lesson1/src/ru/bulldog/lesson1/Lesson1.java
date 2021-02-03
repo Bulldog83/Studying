@@ -1,4 +1,4 @@
-package ru.bulldog;
+package ru.bulldog.lesson1;
 
 public class Lesson1 {
 
