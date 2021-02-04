@@ -17,7 +17,7 @@ public class Cat {
 	}
 
 	public void eat(Plate plate) {
-		if (plate.getFoodAmount() >= hunger) {
+		if (hungry && plate.getFoodAmount() >= hunger) {
 			plate.getFood(hunger);
 			hungry = false;
 		}
