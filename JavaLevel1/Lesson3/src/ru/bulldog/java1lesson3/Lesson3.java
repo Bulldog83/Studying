@@ -1,4 +1,4 @@
-package ru.bulldog.lesson3;
+package ru.bulldog.java1lesson3;
 
 import java.util.Random;
 import java.util.Scanner;

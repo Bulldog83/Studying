@@ -1,4 +1,4 @@
-package ru.bulldog.lesson6;
+package ru.bulldog.java1lesson6;
 
 public class Animal {
 

@@ -1,4 +1,4 @@
-package ru.bulldog.lesson7;
+package ru.bulldog.java1lesson7;
 
 public class Cat {
 

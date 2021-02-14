@@ -1,4 +1,4 @@
-package ru.bulldog.lesson8;
+package ru.bulldog.java1lesson8;
 
 import javax.swing.*;
 import java.awt.*;

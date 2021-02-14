@@ -1,8 +1,4 @@
-package ru.bulldog.lesson8;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+package ru.bulldog.java1lesson8;
 
 public class Lesson8 {
 
