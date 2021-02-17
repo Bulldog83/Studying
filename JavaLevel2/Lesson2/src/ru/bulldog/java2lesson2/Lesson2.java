@@ -24,6 +24,9 @@ public class Lesson2 {
 		}
 		int sum = 0;
 		for (int i = 0; i < 4; i++) {
+			if (array[i].length != 4) {
+				throw new ArrayLengthException(i, array.length);
+			}
 			for (int j = 0; j < 4; j++) {
 				try {
 					sum += Integer.parseInt(array[i][j]);
