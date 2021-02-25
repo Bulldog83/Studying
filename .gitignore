@@ -3,6 +3,7 @@
 build/
 out/
 classes/
+run/
 
 # Compiled class file
 *.class
