@@ -14,15 +14,16 @@ public class Lesson5 {
 		calcAsync(array.clone());
 	}
 
-	private static void calc(float[] array) {
+	private static void calc(float[] array, int start) {
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (float) (array[i] * Math.sin(0.2f + i / 5.0f) * Math.cos(0.2f + i / 5.0f) * Math.cos(0.4f + i / 2.0f));
+			int k = i + start;
+			array[i] = (float) (array[i] * Math.sin(0.2f + k / 5.0f) * Math.cos(0.2f + k / 5.0f) * Math.cos(0.4f + k / 2.0f));
 		}
 	}
 
 	private static void calcBasic(float[] array) {
 		long start = System.currentTimeMillis();
-		calc(array);
+		calc(array, 0);
 		System.out.println("Basic calc time: " + (System.currentTimeMillis() - start));
 	}
 
@@ -34,10 +35,10 @@ public class Lesson5 {
 		final float[] leftHalf = Arrays.copyOfRange(array, 0, halfLen);
 		final float[] rightHalf = Arrays.copyOfRange(array, halfLen, len);
 		Thread firstTask = new Thread(() -> {
-			calc(leftHalf);
+			calc(leftHalf, 0);
 		});
 		Thread secondTask = new Thread(() -> {
-			calc(rightHalf);
+			calc(rightHalf, halfLen);
 		});
 
 		firstTask.start();
