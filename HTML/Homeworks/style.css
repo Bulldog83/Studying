@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: sans-serif;
 }
@@ -9,6 +14,11 @@ input, textarea {
     opacity: 0.4;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 .welcome-text, .text {
     font-size: 16px;
     line-height: 26px;
@@ -16,8 +26,12 @@ input, textarea {
 }
 
 .welcome-header {
+    width: 510px;
     font-size: 64px;
     color: #1F3F68;
+}
+.welcome-text {
+    width: 425px;
 }
 
 .header-2, .header-3 {
@@ -46,4 +60,32 @@ input, textarea {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.article, .contact-contaner,
+.map-container, .contacts {
+    display: flex;
+}
+.article, .contacts {
+    justify-content: space-between;
+}
+
+.article-section {
+    width: 359px;
+}
+
+.cooperation {
+    width: 495px;
+}
+.cooperation__header {
+    width: 340px;
+}
+
+.map-container {
+    height: 400px;
+}
+.map {
+    align-items: stretch;
+    flex-grow: 1;
+    border: none;
 }
