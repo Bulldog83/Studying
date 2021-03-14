@@ -286,7 +286,6 @@ textarea {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
-    counter-reset: contacts-counter;
 }
 
 .contacts-item {
