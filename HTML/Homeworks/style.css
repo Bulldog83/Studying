@@ -201,6 +201,7 @@ textarea {
 }
 
 .project-img {
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -304,4 +305,134 @@ textarea {
     padding: 64px 0;
     color: #fff;
     opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+
+    .heading-mid {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .welcome {
+        background-size: 45%;
+        background-position: right 295px;
+    }
+
+    .what-we-do {
+        padding-top: 64px;
+    }
+
+    .wwd-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wwd-section {
+        margin-bottom: 32px;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .footer>.container {
+        padding-left: 125px;
+    }
+
+    .cooperation {
+        width: 336px;
+    }
+
+    .cooperation-link {
+        padding: 5px 30px;
+        margin-right: 92px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contacts-item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .copyright {
+        padding-top: 32px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .header {
+        height: 376px;
+    }
+
+    .container {
+        padding: 0 16px;
+        max-width: 376px;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading-mid {
+        font-size: 24px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .main-menu {
+        margin-top: 24px;
+    }
+
+    .main-header {
+        height: 376px;
+    }
+
+    .welcome {
+        background-image: none;
+        padding-top: 32px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .welcome-header {
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .welcome-text {
+        margin-top: 12px;
+    }
+
+    .welcome-link {
+        margin-top: 32px;
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .wwd-section {
+        width: 100%;
+        padding: 21px 30px;
+    }
+
+    .footer>.container {
+        padding-left: 16px;
+    }
 }
