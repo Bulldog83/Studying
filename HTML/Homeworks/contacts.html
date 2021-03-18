@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <menu class="main-menu container">
-            <a href="index.html">Главная</a>
-            <a href="contacts.html">Контакты</a>
-        </menu>
-        <section class="contacts-welcome">
-            <section class="container">
-                <h2 class="heading-big">Contact Us</h2>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officia.</p>
-            </section>
+    <menu class="main-menu flex-box flex-between container">
+        <a class="main-menu-item to-homepage" href="index.html" title="На главную"></a>
+        <a class="main-menu-item to-contacts" href="contacts.html" title="Контакты"></a>
+    </menu>
+    <header class="contacts-header header">
+        <section class="contacts-welcome flex-box container">
+            <h2 class="contacts-heading heading-big">Contact Us</h2>
+            <p class="contacts-header-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
     </header>
-    <section class="contact-contaner flex-box container">
+    <section class="contacts-contaner flex-box container">
         <div class="contact-info">
-            <img src="img/map.jpg" alt="Map">
+            <img src="img/contacts-img.svg" alt="Contacts Image">
             <h4 class="heading-mini">Address</h4>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <h4 class="heading-mini">Phone</h4>
@@ -62,20 +60,21 @@
         <iframe class="map" src="https://yandex.ru/map-widget/v1/"></iframe>
     </section>
     <footer class="footer">
-        <section class="container">
+        <section class="cooperation-container flex-box flex-between container">
             <div class="cooperation">
-                <h3 class="heading-mid">Lorem, ipsum.</h3>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <h3 class="cooperation-heading heading-mid">Intersted to work with our team?</h3>
+                <p class="cooperation-text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
+            <a href="#" class="cooperation-link">Let’s Talk</a>
         </section>
         <hr class="delimiter">
-        <section class="container">
-            <ul class="contacts">
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>84995554433</li>
-                <li><a href="mailto:mail@pisem.net">mail@pisem.net</a></li>
-            </ul>
-            <p class="copyright text">&copy; All Rights Reserved.</p>
+        <section class="contacts-container container">
+            <ol class="contacts flex-box">
+                <li class="contacts-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="contacts-item">+7-812-7313-4321</li>
+                <li class="contacts-item"><a class="contacts-mail" href="mailto:hello.site@gmail.com">hello.site@gmail.com</a></li>
+            </ol>
+            <p class="copyright text">2021 All Rights Reserved.</p>
         </section>
     </footer>
 </body>
