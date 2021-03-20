@@ -58,13 +58,15 @@ textarea {
 }
 
 .heading-mini {
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: 0.04em;
     color: #1F3F68;
-    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.header {
+.home-header {
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
     height: 768px;
 }
@@ -201,6 +203,7 @@ textarea {
 }
 
 .project-img {
+    border-radius: 10px;
     width: 100%;
 }
 
@@ -258,6 +261,41 @@ textarea {
     text-decoration: none;
 }
 
+.contacts-header {
+    background-image: url(img/contacts-header.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 34px;
+    height: 250px;
+}
+
+.contacts-welcome {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 51px;
+}
+
+.contacts-heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.contacts-header-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    width: 780px;
+}
+
+.contacts-contaner {
+    padding-top: 57px;
+}
+
 .map-container {
     height: 400px;
 }
@@ -304,4 +342,192 @@ textarea {
     padding: 64px 0;
     color: #fff;
     opacity: 0.4;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+
+    .heading-mid {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .welcome {
+        background-size: 45%;
+        background-position: right 295px;
+    }
+
+    .what-we-do {
+        padding-top: 64px;
+    }
+
+    .wwd-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wwd-section {
+        margin-bottom: 32px;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .cooperation-container,
+    .contacts-container {
+        padding-left: 125px;
+    }
+
+    .cooperation {
+        width: 336px;
+    }
+
+    .cooperation-link {
+        padding: 5px 30px;
+        margin-right: 92px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contacts-item {
+        margin-bottom: 25px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .copyright {
+        padding-top: 32px;
+    }
+}
+
+@media (max-width: 719px) {
+
+    .home-header {
+        height: 376px;
+    }
+
+    .container {
+        padding: 0 16px;
+        max-width: 376px;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading-mid {
+        font-size: 24px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .main-menu {
+        margin-top: 24px;
+    }
+
+    .main-header {
+        height: 376px;
+    }
+
+    .welcome {
+        background-image: none;
+        padding-top: 32px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .welcome-header {
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .welcome-text {
+        margin-top: 12px;
+    }
+
+    .welcome-link {
+        margin-top: 32px;
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .wwd-section {
+        width: 100%;
+        padding: 21px 30px;
+    }
+
+    .project-img-wrapper {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project-img-container-left {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .project-img-text-big {
+        right: 16px;
+    }
+
+    .project-img-text-small {
+        left: 16px;
+    }
+
+    .project-img-text-big,
+    .project-img-text-small {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+    }
+
+    .footer {
+        padding-top: 18px;
+    }
+
+    .cooperation-container {
+        flex-direction: column;
+    }
+
+    .cooperation-container,
+    .contacts-container {
+        padding-left: 16px;
+    }
+
+    .cooperation-heading {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cooperation-link {
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .delimiter {
+        margin-top: 41px;
+    }
+
+    .contacts {
+        margin-top: 32px;
+    }
+
+    .contacts-item {
+        width: auto;
+    }
 }
