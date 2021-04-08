@@ -1,12 +1,8 @@
-package ru.bulldog.Lesson6.test;
+package ru.bulldog.java3lesson6.test;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import ru.bulldog.Lesson6.main.Lesson6;
-
-import java.util.Arrays;
+import ru.bulldog.java3lesson6.main.Lesson6;
 
 public class Lesson6Test {
 

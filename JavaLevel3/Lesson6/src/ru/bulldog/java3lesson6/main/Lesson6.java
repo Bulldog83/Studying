@@ -1,4 +1,4 @@
-package ru.bulldog.Lesson6.main;
+package ru.bulldog.java3lesson6.main;
 
 import java.util.ArrayList;
 import java.util.List;
