@@ -4,6 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import ru.bulldog.java3lesson6.main.Lesson6;
 
+import java.io.File;
+import java.util.concurrent.Callable;
+
 public class Lesson6Test {
 
 	@Test
@@ -29,6 +32,8 @@ public class Lesson6Test {
 	@Test
 	public void test2_2() {
 		Assert.assertFalse(Lesson6.validate1And4(1, 1, 1, 4, 4, 4, 5, 1));
+
+		new File("").mkdir();
 	}
 
 	@Test
