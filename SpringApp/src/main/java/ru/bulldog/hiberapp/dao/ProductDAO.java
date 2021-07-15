@@ -92,4 +92,16 @@ public class ProductDAO implements DAO<Product, Long> {
 			session.close();
 		}
 	}
+
+	public void buyProduct(User buyer, Product product) {
+		Session session = sessionManager.getSession();
+		try {
+			session.beginTransaction();
+			session.persist(buyer);
+			buyer.getProducts().add(product);
+		} finally {
+			session.getTransaction().commit();
+			session.close();
+		}
+	}
 }

@@ -37,4 +37,8 @@ public class ProductsService {
 		}
 		return new ArrayList<>();
 	}
+
+	public void buyProduct(User user, Product product) {
+		productDAO.buyProduct(user, product);
+	}
 }
