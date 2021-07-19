@@ -8,41 +8,33 @@ import ru.bulldog.hiberapp.model.Product;
 import ru.bulldog.hiberapp.model.User;
 import ru.bulldog.hiberapp.model.UserProduct;
 
-import javax.persistence.EntityExistsException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Component
-public class ProductDAO implements DAO<Product, Long> {
+public class UserProductDAO implements DAO<UserProduct, Long> {
 
 	private final SessionManager sessionManager;
 
 	@Autowired
-	public ProductDAO(SessionManager sessionManager) {
+	public UserProductDAO(SessionManager sessionManager) {
 		this.sessionManager = sessionManager;
 	}
 
-
 	@Override
-	public Optional<Product> getOne(Long id) {
+	public Optional<UserProduct> getOne(Long id) {
 		try (Session session = sessionManager.getSession()) {
-			session.beginTransaction();
-			Product product = session.get(Product.class, id);
-			session.getTransaction().commit();
-			return Optional.ofNullable(product);
-		} catch (Exception ex) {
-			return Optional.empty();
+			return Optional.ofNullable(session.get(UserProduct.class, id));
 		}
 	}
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public List<Product> findAll() {
+	public List<UserProduct> findAll() {
 		try (Session session = sessionManager.getSession()) {
 			session.beginTransaction();
-			List<Product> users = (List<Product>) session.createQuery("from User").getResultList();
+			List<UserProduct> users = (List<UserProduct>) session.createQuery("FROM UserProduct").getResultList();
 			session.getTransaction().commit();
 			return users;
 		} catch (Exception ex) {
@@ -51,7 +43,7 @@ public class ProductDAO implements DAO<Product, Long> {
 	}
 
 	@Override
-	public Product save(Product entity) {
+	public UserProduct save(UserProduct entity) {
 		try (Session session = sessionManager.getSession()) {
 			session.beginTransaction();
 			session.saveOrUpdate(entity);
@@ -63,7 +55,7 @@ public class ProductDAO implements DAO<Product, Long> {
 	}
 
 	@Override
-	public void delete(Product entity) {
+	public void delete(UserProduct entity) {
 		try (Session session = sessionManager.getSession()) {
 			session.beginTransaction();
 			session.delete(entity);
@@ -75,23 +67,17 @@ public class ProductDAO implements DAO<Product, Long> {
 	public void delete(Long id) {
 		try (Session session = sessionManager.getSession()) {
 			session.beginTransaction();
-			session.createQuery("DELETE FROM Product p WHERE p.raw_id = :id")
+			session.createQuery("DELETE FROM UserProduct up WHERE up.raw_id = :id")
 					.setParameter("id", id).executeUpdate();
 			session.getTransaction().commit();
 		}
 	}
 
-	public List<Product> getProductsBoughtByUser(User user) {
-		Session session = sessionManager.getSession();
-		try {
+	public void buyProduct(UserProduct bought) {
+		try (Session session = sessionManager.getSession();) {
 			session.beginTransaction();
-			session.persist(user);
-			return user.getProducts().stream().map(UserProduct::getProduct).collect(Collectors.toList());
-		} catch (EntityExistsException ex) {
-			return user.getProducts().stream().map(UserProduct::getProduct).collect(Collectors.toList());
-		} finally {
+			session.saveOrUpdate(bought);
 			session.getTransaction().commit();
-			session.close();
 		}
 	}
 }

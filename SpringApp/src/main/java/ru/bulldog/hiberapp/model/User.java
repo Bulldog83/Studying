@@ -13,13 +13,9 @@ public class User {
 	@Column
 	private String name;
 
-	@ManyToMany
-	@JoinTable(
-		name = "users_products",
-		joinColumns = @JoinColumn(name = "user_id"),
-		inverseJoinColumns = @JoinColumn(name = "product_id"))
-	private List<Product> products;
-
+	@OneToMany
+	@JoinColumn(name = "user_id")
+	private List<UserProduct> products;
 
 	public User() {}
 
@@ -39,11 +35,11 @@ public class User {
 		this.name = name;
 	}
 
-	public List<Product> getProducts() {
+	public List<UserProduct> getProducts() {
 		return products;
 	}
 
-	public void setProducts(List<Product> products) {
+	public void setProducts(List<UserProduct> products) {
 		this.products = products;
 	}
 }

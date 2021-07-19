@@ -16,12 +16,9 @@ public class Product {
 	@Column
 	private double price;
 
-	@ManyToMany
-	@JoinTable(
-		name = "users_products",
-		joinColumns = @JoinColumn(name = "product_id"),
-		inverseJoinColumns = @JoinColumn(name = "user_id"))
-	private List<User> users;
+	@OneToMany
+	@JoinColumn(name = "product_id")
+	private List<UserProduct> users;
 
 	public Product() {}
 
@@ -60,11 +57,11 @@ public class Product {
 		this.price = price;
 	}
 
-	public List<User> getUsers() {
+	public List<UserProduct> getUsers() {
 		return users;
 	}
 
-	public void setUsers(List<User> users) {
+	public void setUsers(List<UserProduct> users) {
 		this.users = users;
 	}
 

@@ -30,15 +30,11 @@ public class ProductsService {
 		return productDAO.getOne(id);
 	}
 
-	public List<Product> getProductsBoughtByUser(Long userId) {
+	public List<? extends Object> getProductsBoughtByUser(Long userId) {
 		Optional<User> userOptional = usersService.findById(userId);
 		if (userOptional.isPresent()) {
 			return productDAO.getProductsBoughtByUser(userOptional.get());
 		}
 		return new ArrayList<>();
-	}
-
-	public void buyProduct(User user, Product product) {
-		productDAO.buyProduct(user, product);
 	}
 }

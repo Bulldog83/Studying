@@ -6,11 +6,13 @@ import org.springframework.stereotype.Component;
 import ru.bulldog.hiberapp.SessionManager;
 import ru.bulldog.hiberapp.model.Product;
 import ru.bulldog.hiberapp.model.User;
+import ru.bulldog.hiberapp.model.UserProduct;
 
 import javax.persistence.EntityExistsException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Component
 public class UserDAO implements DAO<User, Long> {
@@ -84,9 +86,9 @@ public class UserDAO implements DAO<User, Long> {
 		try {
 			session.beginTransaction();
 			session.persist(product);
-			return product.getUsers();
+			return product.getUsers().stream().map(UserProduct::getUser).collect(Collectors.toList());
 		} catch (EntityExistsException ex) {
-			return product.getUsers();
+			return product.getUsers().stream().map(UserProduct::getUser).collect(Collectors.toList());
 		} finally {
 			session.getTransaction().commit();
 			session.close();
