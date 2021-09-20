@@ -1,0 +1,2 @@
+group 'ru.bulldog.rabbitmq.consumer'
+version '1.0-SNAPSHOT'
