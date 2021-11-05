@@ -1,8 +1,8 @@
 package ru.bulldog.patterns.database.storage;
 
+import org.flywaydb.core.Flyway;
 import org.h2.jdbcx.JdbcConnectionPool;
 import ru.bulldog.patterns.database.Configuration;
-import ru.bulldog.patterns.database.DBInitializer;
 import ru.bulldog.patterns.database.mapper.CategoryMapper;
 import ru.bulldog.patterns.database.mapper.ProductMapper;
 
@@ -20,7 +20,7 @@ public class Storage {
 	private final ProductStorage productStorage;
 
 	public Storage() {
-		DBInitializer.initialize(URL, LOGIN, PASSWORD);
+		initialize();
 		this.connectionPool = JdbcConnectionPool.create(URL, LOGIN, PASSWORD);
 		this.categoryStorage = new CategoryStorage(this, new CategoryMapper());
 		this.productStorage = new ProductStorage(this, new ProductMapper(categoryStorage));
@@ -36,6 +36,11 @@ public class Storage {
 
 	public ProductStorage getProductStorage() {
 		return productStorage;
+	}
+
+	public void initialize() {
+		Flyway flyway = Flyway.configure().dataSource(URL, LOGIN, PASSWORD).load();
+		flyway.migrate();
 	}
 
 	static {
