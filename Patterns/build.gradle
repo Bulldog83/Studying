@@ -12,6 +12,8 @@ repositories {
 dependencies {
     implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
     implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
+    implementation 'org.flywaydb:flyway-core:8.0.2'
+    implementation 'com.h2database:h2:1.4.200'
     implementation 'io.netty:netty-all:4.1.69.Final'
     implementation 'com.google.guava:guava:31.0.1-jre'
     implementation 'org.jetbrains:annotations:22.0.0'
